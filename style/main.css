@@ -1,0 +1,30 @@
+body{
+    background-color: #7BAFD4;
+}
+
+h6 {
+    font-size: 14px;
+}
+
+#app {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.left, .right {
+    border: 2px dotted white;
+    padding: 1em;
+    margin-top: 10px;
+}
+
+.left {
+    flex-grow: 2;
+    flex-basis: 100;
+    /* flex: 3 10px */
+}
+
+.right {
+    flex-grow: 1;
+    flex-basis: 10;
+    /* flex: 1 10px */
+}
