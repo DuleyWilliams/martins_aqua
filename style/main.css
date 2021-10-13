@@ -1,9 +1,37 @@
 body{
-    background-color: #7BAFD4;
+    background: #dbe2e8;
+    margin: 0;
+    background-image: url("/images/background_ocean_opt.jpg");
+    /* mix-blend-mode: overlay; */
+    font-family: 'Montserrat', sans-serif;
+    color: #092c40;
+}
+
+nav {
+    background-color: #ffffff;
+    width: 100%;
+    height: 105px;
+    padding: .5em;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #092c40;
+    margin-top: 5px;
+    margin-bottom: 2px;
+    padding: .5em;
 }
 
 h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: #092c40;
     font-size: 14px;
+}
+
+.header_r {
+    display: flex;
+    flex-direction: row;
 }
 
 #app {
@@ -20,11 +48,24 @@ h6 {
 .left {
     flex-grow: 2;
     flex-basis: 100;
-    /* flex: 3 10px */
 }
 
 .right {
     flex-grow: 1;
     flex-basis: 10;
-    /* flex: 1 10px */
+    background-color: #43aae53b;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+}
+
+img {
+
+    width: 80%;
+}
+
+.quotes {
+    
 }
