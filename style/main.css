@@ -62,10 +62,10 @@ h6 {
 }
 
 img {
-
-    width: 80%;
+    max-width:50%;
+    height:auto;
 }
 
 .quotes {
-    
+
 }
