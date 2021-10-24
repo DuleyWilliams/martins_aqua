@@ -1,71 +1,203 @@
-body{
-    background: #dbe2e8;
-    margin: 0;
-    background-image: url("/images/background_ocean_opt.jpg");
-    /* mix-blend-mode: overlay; */
-    font-family: 'Montserrat', sans-serif;
-    color: #092c40;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+body {
+  background: #dbe2e8;
+  margin: 0;
+  background-image: url("/images/background_ocean_opt.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Montserrat", sans-serif;
+  color: #092c40;
 }
 
 nav {
-    background-color: #ffffff;
-    width: 100%;
-    height: 105px;
-    padding: .5em;
-    margin: 0;
+  background-color: #ffffff;
+  width: 100%;
+  height: auto;
 }
 
 h1 {
-    font-family: 'Montserrat', sans-serif;
-    color: #092c40;
-    margin-top: 5px;
-    margin-bottom: 2px;
-    padding: .5em;
+  font-family: "Montserrat", sans-serif;
+  color: #092c40;
+  margin-top: 5px;
+  margin-bottom: 2px;
+  padding: 0.5em;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30pt;
+  color: #092c40;
+  margin-bottom: 2px;
+}
+
+h4 {
+  font-family: "Montserrat", sans-serif;
+  color: #092c40;
+  font-size: 20pt;
+  font-weight: bolder;
+  margin-top: -25px;
 }
 
 h6 {
-    font-family: 'Montserrat', sans-serif;
-    color: #092c40;
-    font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: #092c40;
+  font-size: 15pt;
+  margin-top: 0.25em;
+  margin-bottom: 1em;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  color: #092c40;
+  font-size: 16pt;
 }
 
 .header_r {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 #app {
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  /*  align-items: stretch; */
 }
 
-.left, .right {
-    border: 2px dotted white;
-    padding: 1em;
-    margin-top: 10px;
+.left,
+.right {
+  padding: 1.5em;
 }
 
 .left {
-    flex-grow: 2;
-    flex-basis: 100;
+  justify-content: space-evenly;
+  flex: 2;
+  flex-basis: 100%;
+  gap: 20px;
+  padding: 1em;
 }
 
 .right {
-    flex-grow: 1;
-    flex-basis: 10;
-    background-color: #43aae53b;
+  flex-grow: 2;
+  background-color: #43aae53b;
+  width: 15%;
+  text-align: center;
 }
 
 .logo {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
+  max-width: 50%;
+  height: auto;
+  padding: 0.5em;
 }
 
 img {
-    max-width:50%;
-    height:auto;
+  max-width: 100%;
+  height: auto;
+  padding: 0.25em;
 }
 
 .quotes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-around;
+}
 
+.fishes {
+  display: flex;
+  flex-direction: nowrap;
+  justify-content: space-around;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  /* width: 600px; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* .img .fish_main {
+  display: flex;
+  flex-direction: row;
+  max-width: 50%;
+  height: auto;
+  padding: 0.5em;
+} */
+
+.fish__id {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+  align-content: stretch;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 1em;
+  flex-grow: 2;
+}
+
+.quotes_harvest {
+  padding: 1em;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.quote__quote--italics {
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-weight: 200;
+  color: #092c40;
+  font-size: 12pt;
+}
+
+.quote--author__p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #092c40;
+  font-size: 12pt;
+  text-align: right;
+  margin-right: 15px;
+}
+
+.quote--author--ocp {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #092c40;
+  font-size: 12pt;
+  text-align: left;
+  margin-left: 1em;
+}
+
+.harvest {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-around;
+}
+
+.harvest_img {
+  max-width: 50%;
+  height: auto;
+  padding: 0.25em;
+  border-radius: 50%;
+}
+
+.tip_tools {
+  background: linear-gradient(
+    to bottom,
+    hsl(0deg 86% 49%),
+    hsl(252deg 100% 59%)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+.degree {
+  font-size: 60pt;
+  line-height: 0.25;
 }
